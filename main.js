@@ -71,17 +71,31 @@ function isReadClick(e) {
 books.forEach((book) => {
     // Create a div (or card) for the book 
     let cardDiv = document.createElement('div');
+    cardDiv.classList.add("row");
+    cardDiv.classList.add("row");
 
     let initialCheckState = (book.read) ? 'checked="true"' : '';
 
     // Set the content of the book div with all the details like title, 
     cardDiv.innerHTML = `
-    <img src="${book.coverImage}" class="cover" />
-    <h3>${book.title}</h3>
-    <h5>${book.authors}</h5>
-    <input type="checkbox" name="isRead" id="isRead_${book.id}" value="true" ${initialCheckState} onclick="javascript:isReadClick(event)"/>
+    <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+            <div class="col-md-4">
+            <img src="${book.coverImage}" class="card-img-top" />
+            </div>
+            <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">${book.title}</h5>
+                <p class="card-text"><b>Authors:</b> ${book.authors}</p>
+                <p class="card-text"><b>Year:</b> ${book.year}</p>
+                <p class="card-text">${book.description}</p>
+                <input type="checkbox" name="isRead" id="isRead_${book.id}" value="true" ${initialCheckState} onclick="javascript:isReadClick(event)"/> Read it
+            </div>
+            </div>
+        </div>
+    </div>  
     `;
 
     // add this book to the main container element
-    document.querySelector('.container').append(cardDiv);
+    document.getElementById('baseContainer').append(cardDiv);
 });  

@@ -1,0 +1,12 @@
+#baseContainer {
+    padding: 3em;
+}
+
+#baseContainer .card {
+    margin-bottom: 2em;
+}
+
+#baseContainer .row>* {
+    padding-right: 0;
+    padding-left: 0;
+}
