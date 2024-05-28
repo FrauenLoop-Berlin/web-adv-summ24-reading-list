@@ -57,6 +57,11 @@ async function getAndDisplayBooks(getBooks, domRoot, isReadClickHandler) {
     } catch (error) {
         // show some error block
         console.log('an error happened', error);
+
+        let failDiv = domRoot.createElement('div');
+        failDiv.classList.add('row');
+        failDiv.innerHTML = "Could not load the books";
+        domRoot.getElementById('rootContainer').append(failDiv);
     }
 }
 
