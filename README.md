@@ -37,6 +37,7 @@ Welcome to our frontend developer hiring process! We're excited to see what you 
 - Functionality: Does the reading list display correctly? Can users toggle the read status of books and add new books via the form?
 - Code Quality: Is the code well-structured, readable, and maintainable? Are best practices followed?
 - UI/UX: Is the reading list interface intuitive and visually appealing? Does it provide clear feedback to the user?
+- Implementation approach: Did you work on incremental steps / chose the right scope for the time available? Did you make the right tradeoffs when deciding how to implement the solution?
 - API Integration (if applicable): Are books fetched from the API correctly? Are errors handled gracefully?
 
 We're looking forward to seeing your reading list application! If you have any questions or need clarification on anything, don't hesitate to reach out.
