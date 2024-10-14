@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(248, 226, 198);
+    margin: 2%;
+}
+
+#page_title {
+    display: flex;
+    justify-content: center;
+    color: rgb(116, 25, 25);
+}
+
+#books_list {
+    display: block;
+    padding: 0;
+}
+
+.book {
+    background-color: rgb(255, 235, 205);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid rgb(200, 150, 100);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    padding: 5px 10px;
+    background-color: rgb(203, 177, 141);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 2px;
+}
+
+.button:hover {
+    background-color: rgb(200, 150, 100);
+}
